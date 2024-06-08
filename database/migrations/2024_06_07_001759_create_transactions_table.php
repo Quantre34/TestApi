@@ -12,8 +12,8 @@ return new class extends Migration
     public function up(){
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
-            $table->string('amount');
-            $table->string('method');
+            $table->string('amount')->default(0);
+            $table->string('method')->nullable();
             $table->string('ConversationId');
             $table->foreignId('user_id')->nullable()->constrained()->onDelete('cascade');
             $table->timestamps();

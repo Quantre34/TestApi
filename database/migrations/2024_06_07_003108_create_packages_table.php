@@ -14,7 +14,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->float('cost');
-            $table->string('chat_credit');
+            $table->integer('chat_credit');
             $table->timestamps();
         });
     }

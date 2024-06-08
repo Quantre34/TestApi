@@ -16,17 +16,10 @@ use App\Http\Controllers\ChatController;
 |
 */
 
-// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-//     return $request->user();
-// });
 
-
-Route::post('/auth', [AuthController::class, 'Auth']);
-Route::post('/subscribe', [SubscriptionController::class, 'Subscribe']);
-Route::post('/chat', [ChatController::class, 'chat']);
-// Route::group(['prefix'=>'/','namespace'=>'main','as'=>'main.'], function(){
-//     Route::get('/auth', [AuthController::class, 'Auth']);
-//     Route::post('/subscribe', [PurchaseController::class, 'SubscriptionController']);
-//     Route::post('/chat',[ChatController::class, 'Chat']);
-// });
-
+    Route::post('/auth', [AuthController::class, 'Authenticate']);
+    
+    Route::middleware('auth:sanctum')->group(function () {
+        Route::post('/subscribe', [SubscriptionController::class, 'Subscribe']);
+        Route::post('/chat',[ChatController::class, 'Chat']);
+    });

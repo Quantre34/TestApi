@@ -4,30 +4,55 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Device;
+use Illuminate\Support\Facades\Auth;
 
 class ChatController extends Controller
 {
-    public function Chat(Request $request){
 
-        $request->validate([
-            'chatId' => 'required|string|max:255',
-            'message' => 'required|text',
+
+
+    /**
+    * @OA\Post(
+    *     path="/api/chat",
+    *     summary="Creates Chat responses for the authenticated and Subscribed user only",
+    *     @OA\RequestBody(
+    *         required=true,
+    *         @OA\JsonContent(
+    *             @OA\Property(property="chatId", type="string"),
+    *             @OA\Property(property="message", type="string")
+    *         )
+    *     ),
+    *     @OA\Response(
+    *         response=200,
+    *         description="Here's your response",
+    *         @OA\JsonContent(
+    *             @OA\Property(property="outcome", type="boolean"),
+    *             @OA\Property(property="Message", type="text")
+    *         )
+    *     )
+    * )
+    */
+    public function __construct(){
+        $this->middleware('auth:sanctum');
+        $this->User = Auth('sanctum')->user();
+    }
+
+    public function Chat(Request $Request){
+
+        $Request->validate([
+            'chatId'=>'required|string',
+            'message'=>'required|string'
         ]);
 
-        $Device = Device::where('device_uuid', $Request->device_uuid)->first();
-        if (!$Device->user) {
-            return response()->json(['outcome'=>false, 'ErrorMessage' => 'Unauthorized request'], 401);
-        }
-        $User = $Device->user;
-        if ($User->chat_credit <= 0) {
+        if ($this->User->chat_credit <= 0) {
             return response()->json(['outcome'=>false, 'ErrorMessage' => 'Insufficient credits'], 200);
         }
 
-        $User->chat_credit -= 1; /// Device can be change, even so the chat credit wont go away
-        $User->save();
+        $this->User->chat_credit -= 1; /// Device can be change, even so the chat credit wont go away
+        $this->User->save();
 
         $Response = 'Im the AI and here is ur answer ...';
 
-        return response()->json(['outcome'=>true,'response' => $Response], 200);
+        return response()->json(['outcome'=>true,'Message' => $Response], 200);
     }
 }

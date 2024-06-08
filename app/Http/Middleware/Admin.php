@@ -16,7 +16,7 @@ class Admin
      */
     public function handle(Request $request, Closure $next)
         {
-            if (!Auth::user() || !Auth::user()->hasRole('admin')) {
+            if (!Auth::user() || !Auth::user()->hasRole('Admin')) {
                 //return response()->json(['outcome'=>false,'message' => 'Unauthorized'], 403);
                 return redirect('/login')->with(['outcome'=>false,'ErrorMessage'=>'Unauthorized']);
             }

@@ -62,7 +62,7 @@
                       headers: {'X-CSRF-TOKEN': @json(csrf_token())},
                       data: formData,
                       success: function(data){
-                        HoldOn.close();
+                        // HoldOn.close();
                         if (data['outcome']) {
                           if (!data['NoAlert']) {
                               Swal.fire('İşlem başarıyla tamamlandı', (data['Message']?? ''), 'success').then((result)=>{

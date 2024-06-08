@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\Admin;
+use App\Http\Controllers\AjaxController;
 use App\Http\Controllers\AdminController;
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +15,7 @@ use App\Http\Controllers\AdminController;
 |
 */
 
-Route::get('/ajax', [AjaxController::class, 'Init']);
+Route::post('/ajax', [AjaxController::class, 'Init']);
 
 Route::group(['prefix'=>'/','namespace'=>'main','as'=>'main.'], function(){
     Route::get('/', function () {
@@ -22,10 +23,8 @@ Route::group(['prefix'=>'/','namespace'=>'main','as'=>'main.'], function(){
     });
     Route::get('/login', function () {
         return view('main.Auth.Login');
-    });
+    })->name('Login');
 });
 Route::group(['prefix'=>'panel','middleware'=>['Admin']],function(){
-
-    Route::get('/transactions', [AdminController::class, 'viewTransactions']);
-
+    Route::get('/', [AdminController::class, 'DashBoard']);
 });

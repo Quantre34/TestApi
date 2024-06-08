@@ -1,0 +1,158 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Sample API",
+        "description": "This is a sample API documentation using Swagger and L5-Swagger.",
+        "contact": {
+            "email": "Quantre34@gmail.com"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/auth": {
+            "post": {
+                "summary": "Authenticate the user using sanctum and creates a token",
+                "operationId": "0c219f1b98e1082196302f404c662574",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "device_uuid": {
+                                        "type": "string"
+                                    },
+                                    "device_name": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful authentication",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "outcome": {
+                                            "type": "boolean"
+                                        },
+                                        "token": {
+                                            "type": "text"
+                                        },
+                                        "history": {
+                                            "type": "text"
+                                        },
+                                        "is_premium": {
+                                            "type": "text"
+                                        },
+                                        "chat_credit": {
+                                            "type": "number"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/chat": {
+            "post": {
+                "summary": "Creates Chat responses for the authenticated and Subscribed user only",
+                "operationId": "ea897903d1fdd759d258cb9ef6672122",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "chatId": {
+                                        "type": "string"
+                                    },
+                                    "message": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Here's your response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "outcome": {
+                                            "type": "boolean"
+                                        },
+                                        "Message": {
+                                            "type": "text"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/subscribe": {
+            "post": {
+                "summary": "Store the transaction info and give user these package has",
+                "operationId": "f745c5d8323d0d2d10207cebfb5c3582",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "chatId": {
+                                        "type": "string"
+                                    },
+                                    "message": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Subscription successful",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "outcome": {
+                                            "type": "boolean"
+                                        },
+                                        "Message": {
+                                            "type": "text"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -70,12 +70,12 @@
                     <div class="mail-pass-wrap my-1">
                       <div class="ms-4 me-4 margin-mobile-updated">
                         <label for="" class="ms-2">E-posta</label> <br>
-                        <input type="text" class="w-100 p-2" placeholder="E-posta giriniz..." name="Mail" style="border-radius: 2rem; background-color: transparent !important; outline:none !important;
+                        <input type="text" class="w-100 p-2" placeholder="E-posta giriniz..." name="email" style="border-radius: 2rem; background-color: transparent !important; outline:none !important;
                        border:2px solid #111 !important;">
                       </div>
                       <div class="ms-4 me-4 mt-2 margin-mobile-updated">
                         <label for="" class="ms-2">Şifre</label> <br>
-                        <input type="password" class="w-100 p-2" placeholder="Şifre giriniz..." name="Password" style="border-radius: 2rem; background-color: transparent !important; outline:none !important;
+                        <input type="password" class="w-100 p-2" placeholder="Şifre giriniz..." name="password" style="border-radius: 2rem; background-color: transparent !important; outline:none !important;
                       border:2px solid #111 !important;">
                       </div>
                     </div>
