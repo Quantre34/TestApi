@@ -28,7 +28,7 @@ class AjaxController extends Controller
  
             if (Auth::attempt($credentials)) {
                 $this->User =  Auth()->user();
-                $this->User->assignRole('admin');
+                $this->User->assignRole('Admin');
                 $result = ['outcome'=>true,'Session-Initiated'=>now(),'Info'=>$this->User];
                 if ($this->User->hasRole('Admin')) {
                     $result['route'] = '/panel';
