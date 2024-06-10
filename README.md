@@ -1,66 +1,39 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Fenix Test Assignment</title><style type="text/css"> * {margin:0; padding:0; text-indent:0; }
+ .s1 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 26pt; }
+ .s2 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 20pt; }
+ .p, p { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; margin:0pt; }
+ h1 { color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 11pt; }
+ li {display: block; }
+ #l1 {padding-left: 0pt;counter-reset: c1 1; }
+ #l1> li>*:first-child:before {counter-increment: c1; content: counter(c1, decimal)". "; color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ #l1> li:first-child>*:first-child:before {counter-increment: c1 0;  }
+ #l2 {padding-left: 0pt;counter-reset: c2 1; }
+ #l2> li>*:first-child:before {counter-increment: c2; content: counter(c2, lower-latin)". "; color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ #l2> li:first-child>*:first-child:before {counter-increment: c2 0;  }
+ #l3 {padding-left: 0pt;counter-reset: c2 1; }
+ #l3> li>*:first-child:before {counter-increment: c2; content: counter(c2, lower-latin)". "; color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ #l3> li:first-child>*:first-child:before {counter-increment: c2 0;  }
+ #l4 {padding-left: 0pt;counter-reset: c3 1; }
+ #l4> li>*:first-child:before {counter-increment: c3; content: counter(c3, lower-roman)". "; color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ #l4> li:first-child>*:first-child:before {counter-increment: c3 0;  }
+ #l5 {padding-left: 0pt;counter-reset: c2 1; }
+ #l5> li>*:first-child:before {counter-increment: c2; content: counter(c2, lower-latin)". "; color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ #l5> li:first-child>*:first-child:before {counter-increment: c2 0;  }
+ #l6 {padding-left: 0pt;counter-reset: c3 1; }
+ #l6> li>*:first-child:before {counter-increment: c3; content: counter(c3, lower-roman)". "; color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ #l6> li:first-child>*:first-child:before {counter-increment: c3 0;  }
+ #l7 {padding-left: 0pt;counter-reset: c2 1; }
+ #l7> li>*:first-child:before {counter-increment: c2; content: counter(c2, lower-latin)". "; color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ #l7> li:first-child>*:first-child:before {counter-increment: c2 0;  }
+ li {display: block; }
+ #l8 {padding-left: 0pt;counter-reset: d1 1; }
+ #l8> li>*:first-child:before {counter-increment: d1; content: counter(d1, decimal)". "; color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ #l8> li:first-child>*:first-child:before {counter-increment: d1 0;  }
+ #l9 {padding-left: 0pt;counter-reset: d2 1; }
+ #l9> li>*:first-child:before {counter-increment: d2; content: counter(d2, lower-latin)". "; color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ #l9> li:first-child>*:first-child:before {counter-increment: d2 0;  }
+ #l10 {padding-left: 0pt;counter-reset: d2 1; }
+ #l10> li>*:first-child:before {counter-increment: d2; content: counter(d2, lower-latin)". "; color: black; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 11pt; }
+ #l10> li:first-child>*:first-child:before {counter-increment: d2 0;  }
+</style></head><body><p class="s1" style="padding-top: 3pt;text-indent: 0pt;text-align: center;">Fenix Test Assignment</p><p class="s2" style="padding-top: 24pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">Introduction</p><p style="padding-top: 9pt;padding-left: 5pt;text-indent: 0pt;line-height: 114%;text-align: left;">An API is requested for an application like ChatGPT. Every time users open the application, device information will be sent to the /auth method by the application. If this endpoint is not previously registered, it should register it to the system and it should send subscription status (premium) and configuration data for application management (chat credit, chat history, etc.) as a response. In case the user makes an in-app purchase, this purchase transaction should be recorded and the user should be made premium. It is expected to have a chat credit according to the package the user purchased. A simple admin panel is needed to view all purchase transactions. There is no design expectation in this panel.</p><p style="padding-top: 1pt;text-indent: 0pt;text-align: left;"><br></p><ol id="l1"><li data-list-text="1."><p style="padding-left: 41pt;text-indent: -18pt;line-height: 114%;text-align: left;">An endpoint should be created to get the user's premium status and basic config information, if any, every time the device is opened. There is no password or session information for users.</p><ol id="l2"><li data-list-text="a."><h1 style="padding-left: 76pt;text-indent: -17pt;text-align: left;">Endpoint: <span class="p">/auth</span></h1></li><li data-list-text="b."><h1 style="padding-top: 1pt;padding-left: 76pt;text-indent: -17pt;text-align: left;">Method<span class="p">: POST</span></h1></li><li data-list-text="c."><h1 style="padding-top: 1pt;padding-left: 76pt;text-indent: -17pt;text-align: left;">Response: <span class="p">JSON (Subscription status and configuration data)</span></h1></li><li data-list-text="d."><h1 style="padding-top: 1pt;padding-left: 76pt;text-indent: -17pt;text-align: left;">Request: <span class="p">{</span></h1><h1 style="padding-top: 1pt;padding-left: 83pt;text-indent: 0pt;text-align: left;">device_uuid<span class="p">: string,</span></h1><h1 style="padding-top: 1pt;padding-left: 83pt;text-indent: 0pt;text-align: left;">device_name<span class="p">: string,</span></h1><p style="padding-top: 1pt;padding-left: 77pt;text-indent: 0pt;text-align: left;">}</p></li></ol></li><li data-list-text="2."><p style="padding-top: 1pt;padding-left: 41pt;text-indent: -18pt;line-height: 114%;text-align: left;">An endpoint should be created to send subscription information after the purchase transaction. It should be possible to determine which device made the purchase transaction with the access token.</p><ol id="l3"><li data-list-text="a."><h1 style="padding-left: 76pt;text-indent: -17pt;text-align: left;">Endpoint: <span class="p">/subscription</span></h1></li><li data-list-text="b."><h1 style="padding-top: 1pt;padding-left: 76pt;text-indent: -17pt;text-align: left;">Method: <span class="p">POST</span></h1></li><li data-list-text="c."><h1 style="padding-top: 1pt;padding-left: 76pt;text-indent: -17pt;text-align: justify;">Request Parameters:</h1><ol id="l4"><li data-list-text="i."><h1 style="padding-top: 1pt;padding-left: 112pt;text-indent: -23pt;text-align: justify;">productId: <span class="p">string</span></h1></li><li data-list-text="ii."><h1 style="padding-top: 1pt;padding-left: 112pt;text-indent: -25pt;text-align: justify;">receiptToken: <span class="p">long text</span></h1></li></ol></li><li data-list-text="d."><h1 style="padding-top: 1pt;padding-left: 76pt;text-indent: -17pt;text-align: justify;">Response: <span class="p">JSON (Subscription status positive/negative)</span></h1></li></ol></li><li data-list-text="3."><p style="padding-top: 1pt;padding-left: 41pt;text-indent: -18pt;line-height: 114%;text-align: justify;">An endpoint should be created to talk with the ChatGPT bot. Credit control should be done according to the user's subscription status. A unique chatId needs to be created for the chat to continue.</p><ol id="l5"><li data-list-text="a."><h1 style="padding-left: 76pt;text-indent: -17pt;text-align: justify;">Endpoint: <span class="p">/chat</span></h1></li><li data-list-text="b."><h1 style="padding-top: 1pt;padding-left: 76pt;text-indent: -17pt;text-align: justify;">Method: <span class="p">POST</span></h1></li><li data-list-text="c."><h1 style="padding-top: 1pt;padding-left: 76pt;text-indent: -17pt;text-align: left;">Request Parameters:</h1><ol id="l6"><li data-list-text="i."><h1 style="padding-top: 1pt;padding-left: 112pt;text-indent: -23pt;text-align: left;">chatId: <span class="p">string</span></h1></li><li data-list-text="ii."><h1 style="padding-top: 1pt;padding-left: 112pt;text-indent: -25pt;text-align: left;">message: <span class="p">text</span></h1></li></ol></li><li data-list-text="d."><h1 style="padding-top: 1pt;padding-left: 76pt;text-indent: -17pt;text-align: left;">Response: <span class="p">JSON (The bot's response)</span></h1></li></ol></li><li data-list-text="4."><p style="padding-top: 1pt;padding-left: 41pt;text-indent: -18pt;line-height: 114%;text-align: left;">The saved subscription data should be displayed in the admin panel with the help of a datatable.</p><ol id="l7"><li data-list-text="a."><p style="padding-left: 76pt;text-indent: -17pt;text-align: left;">Only users who are administrators should be able to log into the panel.</p></li></ol></li></ol><p class="s2" style="padding-top: 3pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">Expected to be used;</p><ol id="l8"><li data-list-text="1."><p style="padding-top: 9pt;padding-left: 40pt;text-indent: -17pt;text-align: left;">Laravel Framework (min 10.x)</p><ol id="l9"><li data-list-text="a."><p style="padding-top: 1pt;padding-left: 76pt;text-indent: -17pt;text-align: left;">Sanctum</p></li><li data-list-text="b."><p style="padding-top: 1pt;padding-left: 76pt;text-indent: -17pt;text-align: left;">Eloquent</p></li><li data-list-text="c."><p style="padding-top: 1pt;padding-left: 76pt;text-indent: -17pt;text-align: left;">Sail</p></li><li data-list-text="d."><p style="padding-top: 1pt;padding-left: 76pt;text-indent: -17pt;text-align: left;">Database migrations</p></li><li data-list-text="e."><p style="padding-top: 1pt;padding-left: 76pt;text-indent: -17pt;text-align: left;">Request validations</p></li></ol></li><li data-list-text="2."><p style="padding-top: 1pt;padding-left: 40pt;text-indent: -17pt;text-align: left;">It's not mandatory but it could be preferred if used.</p><ol id="l10"><li data-list-text="a."><p style="padding-top: 1pt;padding-left: 76pt;text-indent: -17pt;text-align: left;">Swagger for API documentation</p></li><li data-list-text="b."><p style="padding-top: 1pt;padding-left: 76pt;text-indent: -17pt;text-align: left;">Faker</p></li><li data-list-text="c."><p style="padding-top: 1pt;padding-left: 76pt;text-indent: -17pt;text-align: left;">Rate limit</p></li><li data-list-text="d."><p style="padding-top: 1pt;padding-left: 76pt;text-indent: -17pt;text-align: left;">Yajra Datatables</p></li><li data-list-text="e."><p style="padding-top: 1pt;padding-left: 76pt;text-indent: -17pt;text-align: left;">Encryption of API responses</p></li><li data-list-text="f."><p style="padding-top: 1pt;padding-left: 76pt;text-indent: -17pt;text-align: left;">Laravel-permission for admin panel</p></li><li data-list-text="g."><p style="padding-top: 1pt;padding-left: 76pt;text-indent: -17pt;text-align: left;">Unit Testing</p></li></ol></li></ol>
+</body></html>
